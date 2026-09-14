@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en"><body><div className="shell"><Sidebar /><main className="main"><PageEntrance>{children}</PageEntrance></main></div></body></html>;
+  return <html lang="en" suppressHydrationWarning><body><div className="shell"><Sidebar /><main className="main"><PageEntrance>{children}</PageEntrance></main></div></body></html>;
 }
