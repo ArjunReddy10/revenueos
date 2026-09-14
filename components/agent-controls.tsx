@@ -1,0 +1,2 @@
+'use client'; import {useState} from 'react';
+export function AgentControls(){const [ack,setAck]=useState(false);return <><p className="sub">Heartbeat is monitored locally in V1. Persistent acknowledgements require a configured Supabase project.</p><button className={ack?'primary':''} onClick={()=>setAck(!ack)}>{ack?'Heartbeat acknowledged':'Acknowledge heartbeat'}</button>{ack&&<p className="positive" style={{fontSize:12}}>Recorded for this browser session.</p>}</>}

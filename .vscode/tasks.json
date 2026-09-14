@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "RevenueOS: Dev Server",
+      "type": "npm",
+      "script": "dev",
+      "isBackground": true,
+      "problemMatcher": "$tsc-watch",
+      "group": "build"
+    },
+    {
+      "label": "RevenueOS: Full Check",
+      "type": "shell",
+      "command": "npm run lint && npm run typecheck && npm test && npm run build",
+      "problemMatcher": ["$eslint-stylish", "$tsc"],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
+}

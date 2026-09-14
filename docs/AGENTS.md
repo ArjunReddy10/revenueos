@@ -1,0 +1,2 @@
+# Agents
+An agent contains mandate, thesis, capital ceiling, owner, generation, heartbeat, revenue, and survival score. The score is a transparent blend of unit economics, evidence confidence, recency, and violations. It prioritizes review and cannot autonomously kill or spend. Heartbeats are immutable child records. A graveyard entry’s postmortem supplies context only; generation two must receive a new review.
