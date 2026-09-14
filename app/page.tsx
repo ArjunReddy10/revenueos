@@ -7,6 +7,7 @@ import { ArrowUpRight, ShieldCheck } from 'lucide-react';
 import { GalaxyPanel } from '@/components/galaxy-panel';
 import { ExperimentPerformanceChart, RevenueTrendChart } from '@/components/charts';
 import { MotionCard, MotionPulse } from '@/components/motion';
+import { RevenueCyclePanel } from '@/components/revenue-cycle-panel';
 
 export default function Command() {
   return <>
@@ -18,6 +19,8 @@ export default function Command() {
     </Header>
 
     <WalletPanel compact />
+
+    <RevenueCyclePanel />
     <p className="sub">Below: seeded strategy examples, not wallet results or live agents.</p>
 
     <section className="grid" style={{ gridTemplateColumns: '1.35fr .9fr', marginTop: 14 }}>
